@@ -966,7 +966,7 @@ p{
   }
   #services .box h4, #services .box p {
     margin-left: 0;
-    text-align: center;
+    text-align: justify;
   }
   #services .icon{
     margin-left: -180px;
@@ -974,6 +974,17 @@ p{
   #services #row-center{
     margin-left: 0%;
   }
+  #services .box h5{
+    margin: 0px 40px;
+    align-items: center;
+  }
+  #services .box{
+    width: 95%;
+    
+  
+    margin: 0 10px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -1062,10 +1073,11 @@ p{
     margin-top: 30px;
 
   } 
-  #services h5{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  #services p h5{
+    align-items: left;
+    justify-content: left;
+    
+    text-align: left;
     
     padding: 0px 0px;
     margin: 0px 0px 0px -100px;
@@ -1343,77 +1355,51 @@ h5{
 }
 
 
-        @media (max-width: 400px) {
-            .row-assistance {
-                flex-direction: column;
-            }
-            .box {
-               
-                margin: 10px 0;
-            }
-            .hh2 {
-                font-size: 20px;
-            }
-            .form input, .form textarea {
-                font-size: 14px;
-            }
-            .form button {
-                width: 100%;
-            }
-        }
+      /* Responsive Design */
+@media (max-width: 768px) {
+  #assistance .row-assistance {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #assistance .box {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  #assistance .box h5 {
+    margin: 10px 0px 10px 20px;
+    text-align: left;
+  }
+
+  #assistance h2.hh2 {
+    text-align: center;
+  }
+  #assistance .icon {
+    display:block;
+    position: relative;
+    margin: 10px auto;
+  }
+}
+
+@media (min-width: 400px) {
+  #assistance .box {
+    width: 100%;
+  }
+  
+  #assistance .box h5 {
+    margin-left: 10px;
+  }
+
+  #assistance .icon {
+    display: none;
+  }
+}
 
 
 
-  /* ================== Responsive Styles ================== */
-
-        /* Téléphones (max 400px) */
-        @media (max-width: 400px) {
-            .row-assistance {
-                flex-direction: column;
-            }
-            .bbox {
-                width: 100%;
-                margin: 10px 0;
-            }
-            .bbox .icon{
-                margin: 0 0 0 -150px;
-
-            }
-
-            .hh2 {
-                font-size: 18px;
-            }
-        }
-
-        /* Petites tablettes (601px à 768px) */
-        @media (min-width: 401px) and (max-width: 768px) {
-            .row-assistance {
-                flex-direction: column;
-            }
-            .box {
-                width: 100%;
-            }
-        }
-
-        /* Grandes tablettes (769px à 1024px) */
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .row-assistance {
-                flex-wrap: wrap;
-            }
-            .box {
-                width: 48%;
-            }
-        }
-
-        /* Ordinateurs (1025px et plus) */
-        @media (min-width: 1025px) {
-            .row-assistance {
-                gap: 15px;
-            }
-            .box {
-                width: 45%;
-            }
-        }
+ 
+       
 
         /* ================== Form Styling ================== */
         .form {
